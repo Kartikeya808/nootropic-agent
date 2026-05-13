@@ -1,0 +1,1 @@
+print("Nootropic agent started")
