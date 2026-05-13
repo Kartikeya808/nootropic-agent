@@ -1,0 +1,202 @@
+[
+  {
+    "title": "AlphaGRPO: Unlocking Self-Reflective Multimodal Generation in UMMs via Decompositional Verifiable Reward",
+    "link": "https://arxiv.org/abs/2605.12495"
+  },
+  {
+    "title": "Learning, Fast and Slow: Towards LLMs That Adapt Continually",
+    "link": "https://arxiv.org/abs/2605.12484"
+  },
+  {
+    "title": "Beyond GRPO and On-Policy Distillation: An Empirical Sparse-to-Dense Reward Principle for Language-Model Post-Training",
+    "link": "https://arxiv.org/abs/2605.12483"
+  },
+  {
+    "title": "ToolCUA: Towards Optimal GUI-Tool Path Orchestration for Computer Use Agents",
+    "link": "https://arxiv.org/abs/2605.12481"
+  },
+  {
+    "title": "OmniNFT: Modality-wise Omni Diffusion Reinforcement for Joint Audio-Video Generation",
+    "link": "https://arxiv.org/abs/2605.12480"
+  },
+  {
+    "title": "Reward Hacking in Rubric-Based Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2605.12474"
+  },
+  {
+    "title": "KV-Fold: One-Step KV-Cache Recurrence for Long-Context Inference",
+    "link": "https://arxiv.org/abs/2605.12471"
+  },
+  {
+    "title": "Solve the Loop: Attractor Models for Language and Reasoning",
+    "link": "https://arxiv.org/abs/2605.12466"
+  },
+  {
+    "title": "Towards Affordable Energy: A Gymnasium Environment for Electric Utility Demand-Response Programs",
+    "link": "https://arxiv.org/abs/2605.12462"
+  },
+  {
+    "title": "Enabling AI-Native Mobility in 6G: A Real-World Dataset for Handover, Beam Management, and Timing Advance",
+    "link": "https://arxiv.org/abs/2605.12453"
+  },
+  {
+    "title": "The Algorithmic Caricature: Auditing LLM-Generated Political Discourse Across Crisis Events",
+    "link": "https://arxiv.org/abs/2605.12452"
+  },
+  {
+    "title": "A Causal Language Modeling Detour Improves Encoder Continued Pretraining",
+    "link": "https://arxiv.org/abs/2605.12438"
+  },
+  {
+    "title": "CAAFC: Chronological Actionable Automated Fact-Checker for misinformation / non-factual hallucination detection and correction",
+    "link": "https://arxiv.org/abs/2605.12436"
+  },
+  {
+    "title": "Formalize, Don't Optimize: The Heuristic Trap in LLM-Generated Combinatorial Solvers",
+    "link": "https://arxiv.org/abs/2605.12421"
+  },
+  {
+    "title": "Stories in Space: In-Context Learning Trajectories in Conceptual Belief Space",
+    "link": "https://arxiv.org/abs/2605.12412"
+  },
+  {
+    "title": "Predicting Decisions of AI Agents from Limited Interaction through Text-Tabular Modeling",
+    "link": "https://arxiv.org/abs/2605.12411"
+  },
+  {
+    "title": "Semantic Reward Collapse and the Preservation of Epistemic Integrity in Adaptive AI Systems",
+    "link": "https://arxiv.org/abs/2605.12406"
+  },
+  {
+    "title": "OGLS-SD: On-Policy Self-Distillation with Outcome-Guided Logit Steering for LLM Reasoning",
+    "link": "https://arxiv.org/abs/2605.12400"
+  },
+  {
+    "title": "Detecting overfitting in Neural Networks during long-horizon grokking using Random Matrix Theory",
+    "link": "https://arxiv.org/abs/2605.12394"
+  },
+  {
+    "title": "SEMIR: Semantic Minor-Induced Representation Learning on Graphs for Visual Segmentation",
+    "link": "https://arxiv.org/abs/2605.12389"
+  },
+  {
+    "title": "Scalable Token-Level Hallucination Detection in Large Language Models",
+    "link": "https://arxiv.org/abs/2605.12384"
+  },
+  {
+    "title": "Trust the Batch, On- or Off-Policy: Adaptive Policy Optimization for RL Post-Training",
+    "link": "https://arxiv.org/abs/2605.12380"
+  },
+  {
+    "title": "Discrete Flow Matching for Offline-to-Online Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2605.12379"
+  },
+  {
+    "title": "ProfiliTable: Profiling-Driven Tabular Data Processing via Agentic Workflows",
+    "link": "https://arxiv.org/abs/2605.12376"
+  },
+  {
+    "title": "Agent-Based Post-Hoc Correction of Agricultural Yield Forecasts",
+    "link": "https://arxiv.org/abs/2605.12375"
+  },
+  {
+    "title": "Fill the GAP: A Granular Alignment Paradigm for Visual Reasoning in Multimodal Large Language Models",
+    "link": "https://arxiv.org/abs/2605.12374"
+  },
+  {
+    "title": "Classifier Context Rot: Monitor Performance Degrades with Context Length",
+    "link": "https://arxiv.org/abs/2605.12366"
+  },
+  {
+    "title": "QAP-Router: Tackling Qubit Routing as Dynamic Quadratic Assignment with Reinforcement Learning",
+    "link": "https://arxiv.org/abs/2605.12365"
+  },
+  {
+    "title": "A Family of Quaternion-Valued Differential Evolution Algorithms for Numerical Function Optimization",
+    "link": "https://arxiv.org/abs/2605.12362"
+  },
+  {
+    "title": "MedHopQA: A Disease-Centered Multi-Hop Reasoning Benchmark and Evaluation Framework for LLM-Based Biomedical Question Answering",
+    "link": "https://arxiv.org/abs/2605.12361"
+  },
+  {
+    "title": "$\u03b4$-mem: Efficient Online Memory for Large Language Models",
+    "link": "https://arxiv.org/abs/2605.12357"
+  },
+  {
+    "title": "Early AI Literacy in Culturally Responsive STEM Outreach for Black Youth",
+    "link": "https://arxiv.org/abs/2605.12355"
+  },
+  {
+    "title": "A New Technique for AI Explainability using Feature Association Map",
+    "link": "https://arxiv.org/abs/2605.12350"
+  },
+  {
+    "title": "BSO: Safety Alignment Is Density Ratio Matching",
+    "link": "https://arxiv.org/abs/2605.12339"
+  },
+  {
+    "title": "Manifold Sampling via Entropy Maximization",
+    "link": "https://arxiv.org/abs/2605.12338"
+  },
+  {
+    "title": "EHR-RAGp: Retrieval-Augmented Prototype-Guided Foundation Model for Electronic Health Records",
+    "link": "https://arxiv.org/abs/2605.12335"
+  },
+  {
+    "title": "Reinforcing VLAs in Task-Agnostic World Models",
+    "link": "https://arxiv.org/abs/2605.12334"
+  },
+  {
+    "title": "Towards Automated Air Traffic Safety Assessment Around Non-Towered Airports Using Large Language Models",
+    "link": "https://arxiv.org/abs/2605.12332"
+  },
+  {
+    "title": "LISA: Cognitive Arbitration for Signal-Free Autonomous Intersection Management",
+    "link": "https://arxiv.org/abs/2605.12321"
+  },
+  {
+    "title": "Transferable Delay-Aware Reinforcement Learning via Implicit Causal Graph Modeling",
+    "link": "https://arxiv.org/abs/2605.12312"
+  },
+  {
+    "title": "KAN-CL: Per-Knot Importance Regularization for Continual Learning with Kolmogorov-Arnold Networks",
+    "link": "https://arxiv.org/abs/2605.12306"
+  },
+  {
+    "title": "Executable Agentic Memory for GUI Agent",
+    "link": "https://arxiv.org/abs/2605.12294"
+  },
+  {
+    "title": "PriorZero: Bridging Language Priors and World Models for Decision Making",
+    "link": "https://arxiv.org/abs/2605.12289"
+  },
+  {
+    "title": "TokenRatio: Principled Token-Level Preference Optimization via Ratio Matching",
+    "link": "https://arxiv.org/abs/2605.12288"
+  },
+  {
+    "title": "Set-Aggregated Genome Embeddings for Microbiome Abundance Prediction",
+    "link": "https://arxiv.org/abs/2605.12286"
+  },
+  {
+    "title": "Iterative Audit Convergence in LLM-Managed Multi-Agent Systems: A Case Study in Prompt Engineering Quality Assurance",
+    "link": "https://arxiv.org/abs/2605.12280"
+  },
+  {
+    "title": "NARA: Anchor-Conditioned Relation-Aware Contextualization of Heterogeneous Geoentities",
+    "link": "https://arxiv.org/abs/2605.12276"
+  },
+  {
+    "title": "How Useful Is Cross-Domain Generalization for Training LLM Monitors?",
+    "link": "https://arxiv.org/abs/2605.12265"
+  },
+  {
+    "title": "Reconnecting Fragmented Citation Networks with Semantic Augmentation",
+    "link": "https://arxiv.org/abs/2605.12263"
+  },
+  {
+    "title": "Missingness-MDPs: Bridging the Theory of Missing Data and POMDPs",
+    "link": "https://arxiv.org/abs/2605.12262"
+  }
+]
