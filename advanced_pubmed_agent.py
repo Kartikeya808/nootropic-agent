@@ -4,13 +4,13 @@ import xml.etree.ElementTree as ET
 
 search_term = "(nootropics OR cognitive enhancement) AND humans"
 
-# SEARCH FOR PAPER IDS
+# SEARCH FOR IDS
 search_url = (
     f"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
     f"?db=pubmed&term={search_term}&retmode=json&retmax=5"
 )
 
-search_response = requests.get(search_url)
+search_response = requests.get(search_url, timeout=10)
 search_data = search_response.json()
 
 paper_ids = search_data["esearchresult"]["idlist"]
@@ -19,50 +19,60 @@ print("Found IDs:", paper_ids)
 
 papers = []
 
-# FETCH FULL ARTICLE DATA
+# FETCH EACH PAPER
 for paper_id in paper_ids:
 
-    fetch_url = (
-        f"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
-        f"?db=pubmed&id={paper_id}&retmode=xml"
-    )
+    print(f"Fetching paper {paper_id}...")
 
-    fetch_response = requests.get(fetch_url)
+    try:
 
-    root = ET.fromstring(fetch_response.content)
+        fetch_url = (
+            f"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
+            f"?db=pubmed&id={paper_id}&retmode=xml"
+        )
 
-    article = root.find(".//PubmedArticle")
+        fetch_response = requests.get(fetch_url, timeout=10)
 
-    if article is None:
-        continue
+        root = ET.fromstring(fetch_response.content)
 
-    # TITLE
-    title_element = article.find(".//ArticleTitle")
-    title = title_element.text if title_element is not None else "No title"
+        article = root.find(".//PubmedArticle")
 
-    # ABSTRACT
-    abstract_text = ""
+        if article is None:
+            print(f"No article found for {paper_id}")
+            continue
 
-    abstract_elements = article.findall(".//AbstractText")
+        # TITLE
+        title_element = article.find(".//ArticleTitle")
+        title = title_element.text if title_element is not None else "No title"
 
-    for section in abstract_elements:
-        if section.text:
-            abstract_text += section.text + " "
+        # ABSTRACT
+        abstract_text = ""
 
-    # PUBLICATION DATE
-    pubdate_element = article.find(".//PubDate/Year")
-    pubdate = pubdate_element.text if pubdate_element is not None else "Unknown"
+        abstract_elements = article.findall(".//AbstractText")
 
-    papers.append({
-        "id": paper_id,
-        "title": title,
-        "abstract": abstract_text.strip(),
-        "pubdate": pubdate,
-        "link": f"https://pubmed.ncbi.nlm.nih.gov/{paper_id}/"
-    })
+        for section in abstract_elements:
+            if section.text:
+                abstract_text += section.text + " "
+
+        # DATE
+        pubdate_element = article.find(".//PubDate/Year")
+        pubdate = pubdate_element.text if pubdate_element is not None else "Unknown"
+
+        papers.append({
+            "id": paper_id,
+            "title": title,
+            "abstract": abstract_text.strip(),
+            "pubdate": pubdate,
+            "link": f"https://pubmed.ncbi.nlm.nih.gov/{paper_id}/"
+        })
+
+        print(f"Saved paper {paper_id}")
+
+    except Exception as e:
+        print(f"Error with {paper_id}: {e}")
 
 # SAVE JSON
 with open("data.json", "w", encoding="utf-8") as file:
     json.dump(papers, file, indent=2, ensure_ascii=False)
 
-print(f"Saved {len(papers)} detailed papers")
+print(f"\nSaved {len(papers)} detailed papers")
